@@ -2,9 +2,14 @@ import requests
 import json
 import pprintpp as Print
 import wget
-import runner as demucs
+import runner as runner
 import shutil
 max_file_size = 10
+server = 'https://demucsmaster.jmjdrwrk.repl.co'
+
+def publish(body):
+    response = requests.post(f'{server}/publish',data=body)
+    print(response.status_code)
 
 def run():
     res = requests.get('https://demucsmaster.jmjdrwrk.repl.co/stack')
@@ -29,4 +34,19 @@ def run():
 
 
             print('\n @@ RUNNING DEMUCS AUTOMAGIC @@ ')
-            demucs.demucs_separate(file_name,'output')
+            output = runner.demucs_separate(file_name,'output','')
+            
+            print('\n@@ Publishing changes to server @@')
+            publish({"success":True,"output":output,"originalfile":stack,"newfiles":"soon"})
+
+# TEST #    
+
+# stack = {
+#     "file_name":"The name of the file",
+#     "file_size":"The size of the file",
+#     "file_mimetype":"The mimeype of the file"
+# }
+    
+# print('\n @@ RUNNING DEMUCS AUTOMAGIC @@ ')
+# output = runner.demucs_separate('file_name','output','')
+# publish({"success":True,"output":output,"originalfile":stack,"newfiles":"soon"})
