@@ -147,3 +147,24 @@ KeyboardInterrupt
 
 
 # BACK TO WITHOUT -n AND NOW WITH -j 2 DUE TO MORE RAM 
+
+CLIENT [running]
+
+Not any Task Attempts: 15 times
+Checking avanegedsevenfoldhailtotheking.mp3
+        File Size [OK]
+        File mimetype [OK]
+===================DOWNLOADING beta========================
+
+ @@ RUNNING DEMUCS AUTOMAGIC @@
+100%|████████████████████████████████████████████████████████████████████████| 330.0/330.0 [03:22<00:00,  1.63seconds/s]
+100%|████████████████████████████████████████████████████████████████████████| 330.0/330.0 [03:28<00:00,  1.59seconds/s]
+100%|████████████████████████████████████████████████████████████████████████| 330.0/330.0 [04:25<00:00,  1.24seconds/s]
+100%|████████████████████████████████████████████████████████████████████████| 330.0/330.0 [03:41<00:00,  1.49seconds/s]
+Selected model is a bag of 4 models. You will see that many progress bars per track.
+Separated tracks will be stored in /home/moai/demucs-client/separated/mdx_extra_q
+Separating track input/avanegedsevenfoldhailtotheking.mp3
+
+-->End of the task next in 5 seconds
+Not any Task Attempts: 20 times
+
